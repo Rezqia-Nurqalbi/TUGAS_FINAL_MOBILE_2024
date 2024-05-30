@@ -37,10 +37,23 @@ public class HistoryFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        loadHistoryData();
+    }
+
     private void loadHistoryData() {
         articles.clear();
         articles.addAll(dbHelper.getAllData());
         adapter.notifyDataSetChanged();
+
+        recyclerView.post(new Runnable() {
+            @Override
+            public void run() {
+                recyclerView.scrollToPosition(0);
+            }
+        });
 
         if (articles.isEmpty()) {
             Toast.makeText(getContext(), "Tidak ada data riwayat yang tersedia", Toast.LENGTH_SHORT).show();
