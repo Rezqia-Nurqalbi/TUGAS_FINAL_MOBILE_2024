@@ -16,6 +16,7 @@ SpotlightNews merupakan aplikasi yang dibuat untuk penyuka berita. Dengan Spotli
 
 # Cara Penggunaan Aplikasi
 1. Memulai Aplikasi
+
     •	Saat aplikasi pertama kali dibuka, akan menampilkan SampulActivity selama beberapa detik sebelum masuk ke MainActivity.
    
 2. Navigasi Utama
