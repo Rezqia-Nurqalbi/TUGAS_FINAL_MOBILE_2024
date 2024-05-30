@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    android:background="@drawable/card2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/card2">
+
+        <TextView
+            android:id="@+id/tv_lastOpened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:text="Last Opened: Date and Time"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:id="@+id/iv_newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tv_lastOpened"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notfound"/>
+
+        <TextView
+            android:id="@+id/tv_newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="Title"
+            android:layout_below="@id/iv_newsImage"/>
+
+        <TextView
+            android:id="@+id/tv_newsDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp"
+            android:text="Description"
+            android:layout_below="@id/tv_newsTitle"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

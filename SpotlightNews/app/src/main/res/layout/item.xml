@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card2"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iv_imageNews"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notfound"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_imageNews"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="Delhi LG Vs CM Kejriwal Over Swati Maliwal's 'Assault'; AAP Says She Is Working For BJP - News18"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_publishedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="Published At: 2024-05-21T16:03:55Z"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

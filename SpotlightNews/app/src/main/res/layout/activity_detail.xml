@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DETAIL"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="@font/font1"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/card3">
+
+                <TextView
+                    android:id="@+id/tv_sourceArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:text="Source: News18" />
+
+                <TextView
+                    android:id="@+id/tv_authorArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="4dp"
+                    android:text="Author: Mahima Joshi" />
+
+                <TextView
+                    android:id="@+id/tv_titleArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:text="Delhi LG Vs CM Kejriwal Over Swati Maliwal's 'Assault'; AAP Says She Is Working For BJP - News18" />
+
+                <ImageView
+                    android:id="@+id/iv_articleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/notfound" />
+
+                <TextView
+                    android:id="@+id/tv_descArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"
+                    android:text="In the letter, VK Saxena said Swati Maliwal called him and told him about the 'intimidation and shaming that she is being subjected to by her own party colleagues'" />
+
+                <TextView
+                    android:id="@+id/tv_publishedAtArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:text="Published At: 2024-05-21T16:03:55Z" />
+
+
+                <TextView
+                    android:id="@+id/tv_contentArticleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"
+                    android:text="Hours after Delhi Lieutenant Governor VK Saxena on Tuesday backed AAP MP Swati Maliwal over the latter's alleged assault at Delhi Chief Minister Arvind Kejriwal's house by his close aide, the Aam Aadmi..." />
+
+                <Button
+                    android:id="@+id/openUrlButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read More"
+                    android:layout_gravity="center"
+                    android:onClick="openUrl"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#AEE2FF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>
